@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adidas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header>
+        <ul class="top-links">
+          <li class="top-link-item"><a href="#">help</a></li>
+          <li class="top-link-item"><a href="#">orders and returns</a></li>
+          <li class="top-link-item"><a href="#">sign up</a></li>
+          <li class="top-link-item"><a href="#">log in</a></li>
+        </ul>
+        <nav class="nav">
+          <div class="logo-container">
+            <img src="./assets/logo.svg" alt="" />
+          </div>
+          <div class="nav-center-right">
+            <ul class="nav-links">
+              <li class="nav-link-item"><a class="bold" href="#">Men</a></li>
+              <li class="nav-link-item"><a class="bold" href="#">Women</a></li>
+              <li class="nav-link-item"><a class="bold" href="#">Kids</a></li>
+              <li class="nav-link-item"><a href="#">New</a></li>
+              <li class="nav-link-item"><a href="#">Sports</a></li>
+              <li class="nav-link-item"><a href="#">Lifestyle</a></li>
+              <li class="nav-link-item">
+                <a class="bold outlet" href="#">Outlet</a>
+              </li>
+            </ul>
+            <div class="nav-right-container">
+              <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search" />
+                <div class="search-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="user-icon-container">
+                <div class="user-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+                    />
+                  </svg>
+                </div>
+                <div class="count-badge">1</div>
+              </div>
+
+              <div class="wishlist-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"
+                  />
+                </svg>
+              </div>
+              <div class="cart-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 22 22"
+                  style="enable-background: new 0 0 22 22"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                      fill: #fff;
+                    }
+
+                    @media (min-width: 768px) {
+                      .st0 {
+                        fill: #000 !important;
+                      }
+                    }
+                  </style>
+                  <path
+                    class="st0 header_cart_icon_svg"
+                    d="M14,6.1v1.2C14,7.6,14.4,8,14.7,8c0.4,0,0.7-0.3,0.7-0.7V6.1h1.4c0.6,0,1.1,0.4,1.2,1l1.4,12.2  c0.1,0.6-0.4,1.2-1,1.3c0,0-0.1,0-0.1,0H3.7c-0.6,0-1.2-0.5-1.2-1.2c0,0,0-0.1,0-0.1L4,7.1c0.1-0.6,0.6-1,1.2-1h1.4v1.2  C6.6,7.6,6.9,8,7.3,8S8,7.6,8,7.3V6.1H14z M15.4,4.7V4.4C15.4,2,13.5,0,11,0S6.6,2,6.6,4.4v0.2H5.2c-1.3,0-2.4,1-2.6,2.3L1.2,19.1  C1,20.5,2,21.8,3.4,22c0.1,0,0.2,0,0.3,0h14.5c1.4,0,2.6-1.2,2.6-2.6c0-0.1,0-0.2,0-0.3L19.4,7c-0.2-1.3-1.3-2.3-2.6-2.3H15.4z   M11,1.4c-1.7,0-3,1.4-3,3l0,0v0.2H14V4.4C14,2.8,12.7,1.4,11,1.4L11,1.4z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- LANDING -->
+      <section class="landing-section">
+        <div class="landing-img-container">
+          <img src="./assets/landing-bg.jpg" alt="" />
+        </div>
+        <div class="landing-content">
+          <div class="landing-title-container">
+            <h2 class="landing-title">Yeezy</h2>
+            <h4 class="landing-subtitle">Available Now.</h4>
+          </div>
+          <div class="black-btn-block">
+            <a href="#">
+              <span class="btn-txt">Shop now</span>
+              <span class="btn-arr"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                  /></svg
+              ></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- OFFER -->
+      <section class="offer-section">
+        <div class="offer-img-container">
+          <img src="./assets/offer-bg.jpg" alt="" />
+        </div>
+        <div class="offer-content">
+          <div class="offer-title-container">
+            <h2 class="offer-title">
+              Extra 20% Off* on orders <br />
+              above INR 5499
+            </h2>
+            <h4 class="offer-subtitle">*Maximum discount of INR 2000/-</h4>
+          </div>
+          <div class="offer-btn-container">
+            <div class="black-btn-block offer-btn">
+              <a href="#">
+                <span class="btn-txt">Shop Men</span>
+                <span class="btn-arr"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                    /></svg
+                ></span>
+              </a>
+            </div>
+            <div class="black-btn-block offer-btn">
+              <a href="#">
+                <span class="btn-txt">Shop Women</span>
+                <span class="btn-arr"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                    /></svg
+                ></span>
+              </a>
+            </div>
+            <div class="black-btn-block offer-btn">
+              <a href="#">
+                <span class="btn-txt">Shop Kids</span>
+                <span class="btn-arr"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                    /></svg
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEALS -->
+      <section class="deals-section">
+        <h2 class="section-title">
+          Go Vibrant with Adidas. Exclusive deals await!
+        </h2>
+
+        <div class="deals-container">
+          <div class="deals-slider">
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/deal-1.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">Min 30% off on Adilette</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/deal-2.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">Shoes under INR 2499/-</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/deal-3.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">Summer wear under INR 1999/-</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/deal-4.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">
+                  Best of original shoes under INR 9999/-
+                </p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/deal-5.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">All white collection under INR 1999/-</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOT -->
+      <section class="deals-section">
+        <h2 class="section-title">What's Hot?</h2>
+
+        <div class="deals-container">
+          <div class="deals-slider">
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/hot-1.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">adidas Originals x TMNT</p>
+                <p class="hot-para">
+                  Classic streetwear inspired by the original comic volumes.
+                </p>
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <video
+                  src="./assets/hot-2.mp4"
+                  loop="true"
+                  autoplay="true"
+                  muted="true"
+                ></video>
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">adidas by Stella McCartney SS24</p>
+                <p class="hot-para">Built for strength.</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <video
+                  src="./assets/hot-3.mp4"
+                  loop="true"
+                  autoplay="true"
+                  muted="true"
+                ></video>
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">2024 National Teams Kits</p>
+                <p class="hot-para">
+                  Time to show your colors and gear up for a summer of
+                  international football!
+                </p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <img src="./assets/hot-4.jpg" alt="" />
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">Supercomfort. Supernova.</p>
+                <p class="hot-para">
+                  Experience maximum comfort with the new Supernova.
+                </p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+            <a class="deal-card">
+              <div class="deal-img-container">
+                <video
+                  src="./assets/hot-5.mp4"
+                  loop="true"
+                  autoplay="true"
+                  muted="true"
+                ></video>
+              </div>
+              <div class="deal-content">
+                <p class="deal-title">Limited Collection Generation Pred</p>
+                <p class="hot-para">Crafted for goals</p>
+
+                <div class="shop-now-btn-container">
+                  <button class="shop-now-btn">
+                    <span class="btn-txt">Shop Now</span>
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about-section">
+        <div class="about-container">
+          <div class="about-content">
+            <h1 class="about-title">
+              STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949
+            </h1>
+            <p class="about-para">
+              Sport keeps us fit. Keeps you mindful. Brings us together. Through
+              sport we have the power to change lives. Whether it is through
+              stories of inspiring athletes. Helping you to get up and get
+              moving. Sportswear featuring the latest technologies, to up your
+              performance. Beat your PB. adidas offers a home to the runner, the
+              basketball player, the soccer kid, the fitness enthusiast. The
+              weekend hiker that loves to escape the city. The yoga teacher that
+              spreads the moves. The 3-Stripes are seen in the music scene. On
+              stage, at festivals. Our sports clothing keeps you focused before
+              that whistle blows. During the race. And at the finish lines.
+              We’re here to support creators. Improve their game. Their lives.
+              And change the world.
+              <br />
+              <br />
+              adidas is about more than sportswear and workout clothes. We
+              partner with the best in the industry to co-create. This way we
+              offer our fans the sports apparel and style that match their
+              athletic needs, while keeping sustainability in mind. We’re here
+              to support creators. Improve their game. Create change. And we
+              think about the impact we have on our world.
+            </p>
+          </div>
+          <div class="about-content">
+            <h1 class="about-title">WORKOUT CLOTHES, FOR ANY SPORT</h1>
+            <p class="about-para">
+              adidas designs for and with athletes of all kinds. Creators, who
+              love to change the game. Challenge conventions. Break the rules
+              and define new ones. Then break them again. We supply teams and
+              individuals with athletic clothing pre-match. To stay focussed. We
+              design sports apparel that get you to the finish line. To win the
+              match. We support women, with bras and tights made for purpose.
+              From low to high support. Maximum comfort. We design, innovate and
+              itterate. Testing new technologies in action. On the pitch, the
+              tracks, the court, the pool. Retro workout clothes inspire new
+              streetwear essentials. Like NMD, Ozweego and our Firebird
+              tracksuits. Classic sports models are brought back to life. Like
+              Stan Smith. And Superstar. Now seen on the streets and the stages.
+              <br />
+              <br />
+              Through our collections we blur the borders between high fashion
+              and high performance. Like our adidas by Stella McCartney athletic
+              clothing collection – designed to look the part inside and outside
+              of the gym. Or some of our adidas Originals lifestyle pieces, that
+              can be worn as sportswear too. Our lives are constantly changing.
+              Becoming more and more versatile. And adidas designs with that in
+              mind.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <!-- yellow block -->
+        <div class="yellow-block">
+          <span class="yellow-title">Join adidas and get 15% OFF</span>
+          <button class="black-btn-block">
+            <a href="#">
+              <span class="btn-txt">Sign up for free</span>
+              <span class="btn-arr"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
+                  /></svg
+              ></span>
+            </a>
+          </button>
+        </div>
+
+        <!-- footer links -->
+        <ul class="parent-list">
+          <li>
+            <h5>Products</h5>
+            <ul class="child-list">
+              <li><a href="#" class="foot-link">Footwear</a></li>
+              <li><a href="#" class="foot-link">Clothing</a></li>
+              <li><a href="#" class="foot-link">Accessories</a></li>
+              <li><a href="#" class="foot-link">Outlet - Sale</a></li>
+              <li><a href="#" class="foot-link">New Arrivals</a></li>
+              <li><a href="#" class="foot-link">Special Offer</a></li>
+              <li><a href="#" class="foot-link">Flat 50% Off!</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>sports</h5>
+            <ul class="child-list">
+              <li><a href="#" class="foot-link">Cricket</a></li>
+              <li><a href="#" class="foot-link">Running</a></li>
+              <li><a href="#" class="foot-link">Football</a></li>
+              <li><a href="#" class="foot-link">Gym/Training</a></li>
+              <li><a href="#" class="foot-link">Tennis</a></li>
+              <li><a href="#" class="foot-link">Outdoor</a></li>
+              <li><a href="#" class="foot-link">Basketball</a></li>
+              <li><a href="#" class="foot-link">Swimming</a></li>
+              <li><a href="#" class="foot-link">Skateboarding</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>collections</h5>
+            <ul class="child-list">
+              <li><a href="#" class="foot-link">Ultraboost</a></li>
+              <li><a href="#" class="foot-link">Superstar</a></li>
+              <li><a href="#" class="foot-link">NMD</a></li>
+              <li><a href="#" class="foot-link">Stan Smith</a></li>
+              <li><a href="#" class="foot-link">Sustainability</a></li>
+              <li><a href="#" class="foot-link">Predator</a></li>
+              <li><a href="#" class="foot-link">Parley</a></li>
+              <li><a href="#" class="foot-link">adicolor</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>support</h5>
+            <ul class="child-list">
+              <li><a href="#" class="foot-link">Help</a></li>
+              <li><a href="#" class="foot-link">Customer Services</a></li>
+              <li><a href="#" class="foot-link">Returns & Exchanges</a></li>
+              <li><a href="#" class="foot-link">Shipping</a></li>
+              <li><a href="#" class="foot-link">Order Tracker</a></li>
+              <li><a href="#" class="foot-link">Store Locator</a></li>
+              <li><a href="#" class="foot-link">Running Shoe Finder</a></li>
+              <li><a href="#" class="foot-link">Bra Fit Guide</a></li>
+              <li><a href="#" class="foot-link">adiclub</a></li>
+              <li>
+                <a href="#" class="foot-link">adiclub Terms and conditions</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h5>company info</h5>
+            <ul class="child-list">
+              <li><a href="#" class="foot-link">About Us</a></li>
+              <li><a href="#" class="foot-link">adidas stories</a></li>
+              <li><a href="#" class="foot-link">adidas Apps</a></li>
+              <li><a href="#" class="foot-link">Entity Details</a></li>
+              <li><a href="#" class="foot-link">Press</a></li>
+              <li><a href="#" class="foot-link">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <h5>follow us</h5>
+            <ul class="child-list">
+              <li>
+                <a href="#" class="foot-link"
+                  ><img src="./assets/insta-logo.jpeg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- lower footer -->
+        <div class="lower-footer">
+          <ul class="lower-footer-list">
+            <li><a href="#" class="lower-link">Privacy Policy</a></li>
+            <li><a href="#" class="lower-link">Terms and Conditions</a></li>
+            <li><a href="#" class="lower-link">Cookies</a></li>
+          </ul>
+          <p class="lower-footer-para">
+            &copy;2021 adidas India Marketing Pvt. Ltd
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

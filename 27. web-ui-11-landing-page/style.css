@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+.app {
+  position: relative;
+}
+.bg-img-container > img {
+  width: 100%;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px 70px;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  font-size: 30px;
+  color: #e96f7e;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.nav-links-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.nav-link-item {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 30px;
+  color: inherit;
+}
+.nav-link-item:first-child {
+  color: #e96f7e;
+}
+.nav-link-item:last-child {
+  margin-right: 0;
+}
+.signin-btn {
+  background-color: transparent;
+  padding: 15px 40px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 5px;
+  border: 2.5px solid #e96f7e;
+}
+
+.middle-section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.middle-section > h1 {
+  color: #574d65;
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.middle-section > p {
+  color: rgba(87, 77, 101, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.learn-btn {
+  font-size: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e96f7e;
+  box-shadow: 0 5px 20px #e96f7e;
+  padding: 20px 35px;
+}
+.process-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #574d65;
+  background-color: transparent;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  border: none;
+}
+.play-icon {
+  border-radius: 50%;
+  border: 2px solid #e96f7e;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play-icon > svg {
+  fill: #e96f7e;
+  height: 12px;
+  width: 12px;
+  display: block;
+}

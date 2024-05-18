@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mealprep</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER -->
+      <header class="sticky">
+        <nav class="navbar">
+          <ul class="nav-links-list">
+            <li class="nav-link-item"><a href="#">About Us</a></li>
+            <li class="nav-link-item"><a href="#">Gallery</a></li>
+            <li class="nav-link-item"><a href="#">Amenities</a></li>
+            <li class="nav-link-item"><a href="#">Products</a></li>
+            <li class="nav-link-item"><a href="#">Reviews</a></li>
+            <li class="nav-link-item"><a href="#">Opening Hours</a></li>
+          </ul>
+          <div class="nav-right-container">
+            <button class="show-more-btn">
+              Show more
+              <span class="circle-container">
+                <div class="circle-white"></div>
+                <div class="circle-white"></div>
+                <div class="circle-white"></div>
+              </span>
+            </button>
+            <div class="share-container">
+              <span class="share">Share:</span>
+              <div class="nav-icon-container">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g fill="currentColor">
+                        <path
+                          d="M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 L17,22 L17,20 L12,20 C7.66,20 4,16.34 4,12 C4,7.66 7.66,4 12,4 C16.34,4 20,7.66 20,12 L20,13.43 C20,14.22 19.29,15 18.5,15 C17.71,15 17,14.22 17,13.43 L17,12 C17,9.24 14.76,7 12,7 C9.24,7 7,9.24 7,12 C7,14.76 9.24,17 12,17 C13.38,17 14.64,16.44 15.54,15.53 C16.19,16.42 17.31,17 18.5,17 C20.47,17 22,15.4 22,13.43 L22,12 C22,6.48 17.52,2 12,2 Z M12,15 C10.34,15 9,13.66 9,12 C9,10.34 10.34,9 12,9 C13.66,9 15,10.34 15,12 C15,13.66 13.66,15 12,15 Z"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav-icon-container">
+                <a href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 571.4 1000"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M535 7v147h-87q-48 0-65 20t-17 60v106h164l-22 165H366v424H195V505H53V340h142V218q0-104 58-161T408 0q82 0 127 7z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="nav-icon-container">
+                <a href="#">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="width: 18px; height: 18px"
+                  >
+                    <g
+                      id="Painter-template-Orange-Blue---1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Painter_Profile_Assets"
+                        transform="translate(-40, -200)"
+                      >
+                        <g id="x-twitter" transform="translate(40, 200)">
+                          <rect
+                            id="Rectangle"
+                            x="0"
+                            y="0"
+                            width="24"
+                            height="24"
+                          ></rect>
+                          <path
+                            d="M18.0371578,2.5 L21.2588005,2.5 L14.2222947,10.5475962 L22.5,21.5 L16.0202086,21.5 L10.9413299,14.8591346 L5.136897,21.5 L1.910691,21.5 L9.43546284,12.890625 L1.5,2.5 L8.1440678,2.5 L12.7301173,8.56995192 L18.0371578,2.5 Z M16.9054759,19.5725962 L18.6897001,19.5725962 L7.17209909,4.32692308 L5.25554107,4.32692308 L16.9054759,19.5725962 Z"
+                            id="Shape"
+                            fill="currentColor"
+                            fill-rule="nonzero"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-btn">
+            <button>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero-section">
+        <header class="hero-header">
+          <div class="hero-header-left">
+            <div class="logo-container">
+              <img src="./assets/logo.webp" alt="" />
+            </div>
+            <h1>Healthy Meal Made Easy</h1>
+          </div>
+          <div class="hero-header-right">
+            <p class="phone-num">098261 57131</p>
+            <div class="wa-icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="#fff"
+                  d="M16.5818427,13.9850787 C16.3330256,13.8611939 15.1097588,13.2621562 14.8816646,13.1794713 C14.6535704,13.096834 14.4876924,13.0555391 14.3218144,13.3033561 C14.1559364,13.5512682 13.6791206,14.1090585 13.5339177,14.2743808 C13.3888102,14.4395604 13.243655,14.4603267 12.9948857,14.3363469 C12.746021,14.2123671 11.9442772,13.9509118 10.9938926,13.1071933 C10.2541741,12.4506089 9.75482111,11.6397268 9.60966591,11.3917672 C9.46455846,11.1439026 9.59424317,11.009896 9.71881881,10.8863914 C9.8307411,10.7754321 9.96763583,10.5971369 10.0920205,10.4525809 C10.2164529,10.3079774 10.2578985,10.2046213 10.3408375,10.0394892 C10.4237765,9.87416691 10.3823309,9.72956341 10.3201147,9.60563113 C10.2578985,9.48169884 9.76026443,8.2627621 9.55294079,7.76689041 C9.35096497,7.28413424 9.14583775,7.34952183 8.99309055,7.34182358 C8.84812634,7.33464805 8.68205733,7.33312741 8.51622706,7.33312741 C8.35034905,7.33312741 8.08076146,7.39509356 7.852715,7.64295812 C7.62462079,7.89091773 6.98183154,8.49000297 6.98183154,9.70884467 C6.98183154,10.9277339 7.87343782,12.1051856 7.9978702,12.2704604 C8.12225484,12.4357826 9.75238595,14.9369528 12.2484347,16.0096228 C12.8420908,16.2647579 13.3055847,16.4171547 13.666897,16.5312029 C14.2629883,16.7197624 14.8054104,16.6931512 15.2340957,16.6293793 C15.7121529,16.5582893 16.7062273,16.0303416 16.9135987,15.4519275 C17.1209223,14.8734185 17.1209223,14.3776418 17.0587061,14.2743808 C16.9965377,14.1710722 16.8306597,14.1090585 16.5818427,13.9850787 M12.0418273,20.1543689 L12.0384849,20.1543689 C10.553318,20.1537986 9.09660913,19.7567211 7.82578489,19.0061895 L7.52358513,18.8276567 L4.39095445,19.6454767 L5.22707706,16.6058093 L5.03030581,16.2941729 C4.20177521,14.9826671 3.76420867,13.4669201 3.76482874,11.9104485 C3.76664384,7.36876745 7.47965658,3.67379863 12.0451219,3.67379863 C14.2558738,3.67455895 16.3340283,4.53253341 17.8967387,6.08952777 C19.4594013,7.64647461 20.3194936,9.71611524 20.3186824,11.9170538 C20.3168197,16.4591149 16.6038069,20.1543689 12.0418273,20.1543689 M19.0860564,4.90642115 C17.2059623,3.03313335 14.7056639,2.00104544 12.0417318,2 C6.55290747,2 2.08566067,6.44554797 2.08346424,11.9097832 C2.08274801,13.6565251 2.5412761,15.3614494 3.41273254,16.8644609 L2,22 L7.27896997,20.6218236 C8.73348238,21.4113692 10.37111,21.8275497 12.0377686,21.82812 L12.0418273,21.82812 L12.041875,21.82812 C17.5301263,21.82812 21.9978028,17.3820968 22,11.917719 C22.001002,9.26966439 20.9661505,6.77966142 19.0860564,4.90642115"
+                ></path>
+              </svg>
+            </div>
+            <button class="send-msg-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M20,18 L4,18 L4,8 L12,13 L20,8 L20,18 Z M12,11 L4,6 L20,6 L12,11 Z"
+                ></path>
+              </svg>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="hero-bg-container">
+          <div class="review-container">
+            <div class="rate-container">
+              <div class="star-container">
+                <span class="star">
+                  <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                    <path
+                      fill="#ffb400"
+                      d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="star">
+                  <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                    <path
+                      fill="#ffb400"
+                      d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="star">
+                  <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                    <path
+                      fill="#ffb400"
+                      d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="star">
+                  <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                    <path
+                      fill="#ffb400"
+                      d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="star">
+                  <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                    <path
+                      fill="#ffb400"
+                      d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+              <p class="rate-txt">111 Reviews</p>
+            </div>
+
+            <div class="rate-google">
+              <img src="./assets/rate-google.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about-section">
+        <h2>About Us</h2>
+        <div class="about-feature">
+          <div class="about-content">
+            <h3>Premium food Delivery in Indore</h3>
+            <p>
+              Looking for a tasty meal delivered straight to your home ?
+              Mealprep®️ is here to bring you outstanding dishes– where you want
+              them, and when you want them. Whenever you find yourself short on
+              time to cook for yourself or you haven’t had the chance to swing
+              by the shop, get in touch with us and we’ll deliver something
+              outstanding to your home or workplace. Call us on +919826157131.
+            </p>
+          </div>
+          <div class="about-img"></div>
+        </div>
+        <div class="about-feature about-feature-rev">
+          <div class="about-content">
+            <h3>Classic Recipes & Amazing Taste</h3>
+            <p>
+              We pride ourselves on cooking outstanding dishes that will treat
+              your tongue to all sorts of delights. There’s nothing quite like
+              delivery when you simply can’t find the will to cook after a long
+              day of work. We also offer a variety of foods throughout the week,
+              so you don’t need to order the same thing day in and day out
+              (unless you want to).
+            </p>
+          </div>
+          <div class="about-img about-img-2"></div>
+        </div>
+        <div class="about-feature">
+          <div class="about-content">
+            <h3>Cooking For You With Pride</h3>
+            <p>
+              We know just what our customers are looking for and craft our
+              cooking to tempt and excite your taste buds. From the moment of
+              giving in your order, to the point when you collect your meal, we
+              aim to please with a range of affordable dishes that don’t
+              compromise on flavour or quality, we think you’ll agree.
+            </p>
+          </div>
+          <div class="about-img about-img-3"></div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-img"></div>
+        </div>
+      </section>
+
+      <!-- Amenities -->
+      <section class="amenities-section">
+        <h2>Amenities</h2>
+        <div class="amenities-container">
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M17.9 5.9l-3.6 3.6v10.1c0 .4-.1.7-.4 1-.3.3-.6.4-1 .4s-.7-.1-1-.4c-.3-.3-.4-.6-.4-1v-4.7h-.8v4.7c0 .4-.1.7-.4 1-.3.3-.6.4-1 .4s-.7-.1-1-.4c-.3-.3-.4-.6-.4-1V9.5L4.5 5.9c-.3-.3-.4-.5-.4-.9 0-.3.1-.6.3-.8.3-.2.6-.3.9-.3.3 0 .6.1.8.3L8.9 7h4.5l2.8-2.8c.2-.2.5-.3.8-.3.3 0 .6.1.8.3.2.2.3.5.3.8.2.4 0 .6-.2.9zm-4.8-4c.5.5.8 1.2.8 1.9a2.732 2.732 0 0 1-2.7 2.7c-.7 0-1.4-.2-2-.7-.5-.5-.8-1.2-.8-1.9a2.732 2.732 0 0 1 2.7-2.7c.7 0 1.5.2 2 .7z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">Good for children</p>
+          </div>
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M11 0l3.4 6.9L22 8l-5.5 5.4 1.3 7.5-6.8-3.5-6.8 3.5 1.3-7.5L0 8l7.6-1.1z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">Free consulting</p>
+          </div>
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M11 0l3.4 6.9L22 8l-5.5 5.4 1.3 7.5-6.8-3.5-6.8 3.5 1.3-7.5L0 8l7.6-1.1z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">Accepts cards</p>
+          </div>
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M11 0l3.4 6.9L22 8l-5.5 5.4 1.3 7.5-6.8-3.5-6.8 3.5 1.3-7.5L0 8l7.6-1.1z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">Delivered to your door</p>
+          </div>
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M11 0l3.4 6.9L22 8l-5.5 5.4 1.3 7.5-6.8-3.5-6.8 3.5 1.3-7.5L0 8l7.6-1.1z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">Healthy Food</p>
+          </div>
+          <div class="amenity-box">
+            <div class="amenity-logo">
+              <svg
+                version="1.1"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                style="width: 20px; height: 20px"
+              >
+                <path
+                  fill="#fff"
+                  d="M21 14.5v2.4c0 .1 0 .2-.1.3-.1.1-.2.1-.3.1h-1.2V20c0 .5-.2 1-.6 1.4-.4.4-.9.6-1.4.6H2c-.6 0-1-.2-1.4-.6C.2 21 0 20.6 0 20V2C0 1.5.2 1 .6.6 1 .2 1.5 0 2 0h15.3c.6 0 1 .2 1.4.6.5.4.7.8.7 1.4v2.8h1.2c.1 0 .2 0 .3.1.1 0 .1.1.1.2v2.4c0 .1 0 .2-.1.3-.1.1-.2.1-.3.1h-1.2v1.6h1.2c.1 0 .2 0 .3.1.1 0 .1.1.1.2v2.4c0 .1 0 .2-.1.3-.1.1-.2.1-.3.1h-1.2v1.6h1.2c.1 0 .2 0 .3.1.1 0 .1.1.1.2zm-5.8.7c0-.5 0-.9-.1-1.3 0-.4-.1-.8-.3-1.2-.1-.4-.3-.8-.5-1.1-.2-.3-.5-.5-.8-.7-.3-.2-.7-.3-1.1-.3-.1 0-.2.1-.4.3-.2.1-.4.2-.5.3-.1.1-.3.1-.5.2s-.4.2-.6.2c-.2 0-.4.1-.6.1-.2 0-.4 0-.6-.1-.2 0-.4-.1-.6-.2-.2-.1-.4-.2-.5-.2-.1-.1-.3-.2-.5-.3-.2-.1-.4-.2-.4-.3-.4 0-.8.1-1.1.3-.3.2-.6.4-.8.7-.2.3-.4.6-.5 1.1l-.3 1.2c0 .4-.1.8-.1 1.3 0 .6.2 1.1.5 1.5.4.4.8.6 1.3.6h7.3c.5 0 .9-.2 1.3-.6.2-.4.4-.9.4-1.5zM13 7.9c0-.9-.3-1.6-1-2.3-.6-.6-1.4-.9-2.3-.9-.9 0-1.7.3-2.3.9-.6.6-1 1.4-1 2.3 0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.9 0 1.7-.3 2.3-.9.7-.6 1-1.3 1-2.2z"
+                ></path>
+              </svg>
+            </div>
+            <p class="amenity-txt">By appointment only</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section class="products-section">
+        <h2>Products</h2>
+        <h3>Meal Preparation</h3>
+        <div class="products-container">
+          <div class="product-box">
+            <a href="#">
+              <div class="product-img-container">
+                <div class="product-img"></div>
+              </div>
+              <div class="product-content">
+                <p class="product-title">Healthy Meal services</p>
+                <p class="product-price">₹200.00</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review-container reviews-static">
+          <div class="rate-container">
+            <div class="star-container">
+              <span class="star">
+                <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                  <path
+                    fill="#ffb400"
+                    d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="star">
+                <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                  <path
+                    fill="#ffb400"
+                    d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="star">
+                <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                  <path
+                    fill="#ffb400"
+                    d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="star">
+                <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                  <path
+                    fill="#ffb400"
+                    d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="star">
+                <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                  <path
+                    fill="#ffb400"
+                    d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                  ></path>
+                </svg>
+              </span>
+            </div>
+            <p class="rate-txt-p">111 Reviews</p>
+          </div>
+          <div class="white-dot-space"></div>
+
+          <div class="rate-google">
+            <img src="./assets/rate-google-w.png" alt="" />
+          </div>
+        </div>
+        <div class="slider-container">
+          <div class="reviews-slider">
+            <div class="slider-list">
+              <!-- 1 -->
+              <div class="slider-item">
+                <div class="white-box">
+                  <div class="review-info">
+                    <div class="right">
+                      <div class="reviewer-logo">
+                        <img src="./assets/review-1.png" alt="" />
+                      </div>
+                      <div class="reviewer-name">
+                        <p>Rahul Wadhwani</p>
+                        <div class="star-container">
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="left">
+                      <p>
+                        18 August <br />
+                        2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-para">
+                    <p>
+                      I have never ever tasted more healthy and tastier food
+                      than this.Just go for it without a second thought.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="slider-item">
+                <div class="white-box">
+                  <div class="review-info">
+                    <div class="right">
+                      <div class="reviewer-logo">
+                        <img src="./assets/review-2.png" alt="" />
+                      </div>
+                      <div class="reviewer-name">
+                        <p>Himanshu Jadhav</p>
+                        <div class="star-container">
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <span class="star">
+                            <svg viewBox="0 0 928.6 1000" style="padding: 0px">
+                              <path
+                                fill="#ffb400"
+                                d="M929 361q0 12-15 27L712 585l48 279v12q0 11-6 19t-17 9q-10 0-22-7L464 765 214 897q-12 7-23 7t-17-9-6-19q0-4 1-12l48-279L14 388Q0 373 0 361q0-21 31-26l280-40L437 41q11-23 27-23t28 23l125 254 280 40q32 5 32 26z"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="left">
+                      <p>
+                        18 August <br />
+                        2023
+                      </p>
+                    </div>
+                  </div>
+                  <div class="review-para">
+                    <p>
+                      Well prepared meals. Accuracy with quantity and prepared
+                      with standard hygienic process. And services are available
+                      just on a WhatsApp message.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide-btn slide-left">
+              <svg viewBox="0 0 714.3 1000">
+                <path
+                  fill="#fff"
+                  d="M654 168L357 464l297 297q10 10 10 25t-10 25l-93 93q-11 10-25 10t-25-10L97 489q-11-10-11-25t11-25L511 25q10-11 25-11t25 11l93 93q10 10 10 25t-10 25z"
+                ></path>
+              </svg>
+            </div>
+            <div class="slide-btn slide-right">
+              <svg viewBox="0 0 714.3 1000">
+                <path
+                  fill="#fff"
+                  d="M618 489L204 904q-11 10-25 10t-25-10l-93-93q-11-11-11-25t11-25l296-297L61 168q-11-11-11-25t11-25l93-93q10-11 25-11t25 11l414 414q10 11 10 25t-10 25z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="review-btn-container">
+          <button class="add-review">Add review</button>
+          <button class="all-review">All reviews</button>
+        </div>
+      </section>
+
+      <!-- Message -->
+      <section class="message-section">
+        <h2>Send a message</h2>
+        <div class="white-line"></div>
+        <p class="message-subtitle">An email will be sent to the owner</p>
+
+        <div class="message-container">
+          <div class="request-container">
+            <div class="textarea-container input-container">
+              <textarea
+                name="requestText"
+                rows="11"
+                placeholder="Tell us about your request"
+                class="some-input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="sender-info">
+            <div class="input-container">
+              <input type="text" class="some-input" placeholder="Your name" />
+            </div>
+            <div class="input-container">
+              <input type="text" class="some-input" placeholder="Your email" />
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                class="some-input"
+                placeholder="Your phone number"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="tnc-check">
+          <div class="input-check">
+            <svg
+              class="MuiSvgIcon-root-204"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+              ></path>
+            </svg>
+          </div>
+          <p>
+            <span
+              >I agree with the <a href="#">Terms &amp; Conditions</a> and the
+              <a href="#">Privacy &amp; Cookies Policy</a>
+              of UENI and any applicable Terms and Conditions of
+              Mealprep®️.</span
+            >
+            <span
+              >This site is protected by reCAPTCHA and the Google
+              <a href="#">Privacy Policy</a>
+              and
+              <a href="#">Terms of Service</a>
+              apply.</span
+            >
+          </p>
+        </div>
+
+        <div class="message-send">
+          <button>Send Message</button>
+        </div>
+      </section>
+
+      <!-- Opening Hours -->
+      <section class="hours-section">
+        <h2>Opening Hours</h2>
+        <div class="hours-container">
+          <div class="hour-table">
+            <div class="day-container">
+              <p class="day">Sunday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Monday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Tuesday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Wednesday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Thursday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Friday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+            <div class="day-container">
+              <p class="day">Saturday</p>
+              <p class="day-time">9:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section">
+        <div class="contact-us-container">
+          <h3>Contact Us</h3>
+          <div class="connect">
+            <div class="right">
+              <div class="connect-item">
+                <a href="#">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 571.4 1000"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M429 357q0-59-42-101t-101-42-101 42-42 101 42 101 101 42 101-42 42-101zm142 0q0 61-18 100L350 889q-9 18-27 29t-37 11-38-11-26-29L18 457Q0 418 0 357q0-118 84-202t202-84 202 84 83 202z"
+                      ></path></svg
+                  ></span>
+                  <p>
+                    Indore <br />
+                    Madhya Pradesh
+                  </p>
+                </a>
+              </div>
+              <div class="connect-item">
+                <a href="#">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 785.7 1000"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M786 692q0 15-6 39t-12 38q-11 28-68 60-52 28-103 28-15 0-30-2t-32-7-26-8-31-11-28-10q-54-20-97-47-71-44-148-120T85 504q-27-43-46-97-2-5-10-28t-12-31-8-26-7-32-2-29q0-52 29-104 31-57 59-68 14-6 38-12t39-6q8 0 12 2 10 3 30 42 6 11 16 31t20 35 17 30q2 2 10 14t12 20 4 16q0 11-16 27t-35 31-34 30-16 25q0 5 3 13t4 11 8 14 7 10q42 77 97 132t131 97q1 0 10 6t14 8 11 5 13 2q10 0 25-16t30-34 31-35 28-16q7 0 15 4t20 12 14 10q14 8 30 17t36 20 30 17q39 19 42 29 2 4 2 12z"
+                      ></path></svg
+                  ></span>
+                  <p>098261 57131</p>
+                </a>
+              </div>
+            </div>
+            <div class="left">
+              <div class="connect-item">
+                <a href="#">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1000 1000"
+                    >
+                      <path
+                        fill="#fff"
+                        d="M1000 396v443q0 37-26 63t-63 27H89q-36 0-63-27T0 839V396q25 27 56 49 202 137 278 192 32 24 51 37t53 27 61 13h2q28 0 61-13t53-27 51-37q95-68 278-192 32-22 56-49zm0-164q0 44-27 84t-68 69Q695 531 643 566q-5 4-23 17t-30 22-29 18-32 15-28 5h-2q-12 0-27-5t-32-15-30-18-30-22-23-17q-51-35-147-101T96 385q-35-23-65-64T0 244q0-43 23-72t66-29h822q36 0 63 26t26 63z"
+                      ></path></svg
+                  ></span>
+                  <p>ermoinzafar@hotmail.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="follow-us-container">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="fb-link"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 571.4 1000">
+                <path
+                  fill="#fff"
+                  d="M535 7v147h-87q-48 0-65 20t-17 60v106h164l-22 165H366v424H195V505H53V340h142V218q0-104 58-161T408 0q82 0 127 7z"
+                ></path></svg
+            ></a>
+            <a href="#" class="insta-link"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 857.1 1000">
+                <path
+                  fill="#fff"
+                  d="M571 500q0-59-41-101t-101-42-101 42-42 101 42 101 101 42 101-42 41-101zm77 0q0 91-64 156t-155 64-156-64-64-156 64-156 156-64 155 64 64 156zm61-229q0 21-15 36t-37 15-36-15-15-36 15-36 36-15 37 15 15 36zM429 148H327q-20 0-54 2t-57 5-40 11q-28 11-49 32t-33 49q-6 16-10 40t-6 58-1 53 0 59 0 43 0 43 0 59 1 53 6 58 10 40q12 28 33 49t49 32q16 6 40 11t57 5 54 2 59 0 43 0 42 0 59 0 54-2 58-5 39-11q28-11 50-32t32-49q6-16 10-40t6-58 1-53 0-59 0-43 0-43 0-59-1-53-6-58-10-40q-11-28-32-49t-50-32q-16-6-39-11t-58-5-54-2-59 0-42 0zm428 352q0 128-3 177-5 116-69 180t-179 69q-50 3-177 3t-177-3q-116-6-180-69T3 677q-3-49-3-177t3-177q5-116 69-180t180-69q49-3 177-3t177 3q116 6 179 69t69 180q3 49 3 177z"
+                ></path></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-right">
+            <a href="#">Merchant Policies</a>
+            <a href="#">Legal Notice</a>
+          </div>
+          <div class="footer-left">
+            <div class="footer-logo">
+              <p>Powered by</p>
+              <a href="#">
+                <svg viewBox="0 0 420.93 608.47">
+                  <path
+                    fill="#fff"
+                    d="M387.33 12.61v128.27c0 119-73.17 179.87-174.57 179.87-96.79 0-179.17-58.61-179.17-179.87V12.61h75.47v128.27c0 72.4 41.48 110.91 104.28 110.91s98.52-41.95 98.52-110.91V12.61zM277.03 543.55l48.43 52.28v.01h15.27v-75.61h-15.27v52.29l-48.43-52.29h-15.27v75.61h15.27v-52.3.01zM168.46 579.35v-13.64h28.43v-16.48h-28.43v-12.51h42.64v-16.49h-57.91v75.61h57.91v-16.49h-42.64zM390.35 520.21h14.43v75.66h-14.43zM404.78 382.18v75.54H16.15v-75.54zM102.94 519.86v31.47c0 29.19-18 44.13-42.83 44.13-23.75 0-44-14.38-44-44.13v-31.47h18.56v31.47c0 17.77 10.18 27.21 25.59 27.21s24.17-10.29 24.17-27.21v-31.47z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <button class="red-msg-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            fill="#000"
+            d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M20,18 L4,18 L4,8 L12,13 L20,8 L20,18 Z M12,11 L4,6 L20,6 L12,11 Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

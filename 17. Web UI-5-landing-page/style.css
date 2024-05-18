@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/* navbar */
+header {
+  padding-left: 80px;
+  padding-right: 70px;
+}
+button {
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.left-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav-links,
+.right-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.link-item {
+  margin-right: 25px;
+}
+.link-item > a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #4c4c4c;
+  font-weight: 600;
+}
+.active-link > a {
+  color: #000;
+}
+
+.logo-container {
+  margin-right: 100px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container svg {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+
+/* Free-BTN */
+.free-btn {
+  border: none;
+  background-color: #000;
+  padding: 12px 20px;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash {
+  margin: 0 5px;
+  background-color: #fff;
+  height: 2px;
+  width: 11px;
+  border-radius: 3px;
+}
+.free-btn > span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* HERO section */
+.hero-section {
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  background-color: #f8f7f7;
+
+  width: 54%;
+  padding: 150px 100px 50px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.hero-img-container {
+  width: 46%;
+  background-image: url("./assets/side-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  font-family: "Cormorant Garamond";
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 60px;
+}
+
+.hero-subcontent {
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.hero-subtitle {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+}
+.hero-subtitle > span {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.author-container {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 70px;
+}
+.author-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Cormorant Garamond";
+}
+.author-designation {
+  font-size: 1.6rem;
+}
+.author-avatar img {
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+}
+.btn-enlarged {
+  padding: 15px 30px;
+}
+.btn-enlarged > span {
+  font-size: 1.8rem;
+}
+.btn-enlarged > .dash {
+  width: 15px;
+}
+.demo-btn {
+  background: transparent;
+  border: none;
+}
+.demo-btn > span {
+  font-weight: 500;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+
+  margin-top: 150px;
+}
+
+.footer-link-item > a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.selling-block {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 15px;
+  position: absolute;
+  top: 54%;
+  left: 46%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.selling-content > span {
+  font-family: "Cormorant Garamond";
+
+  font-size: 3rem;
+  font-weight: 500;
+}
+.selling-content > .wavy-dash {
+  font-size: 4rem;
+  line-height: 0.7;
+}
+
+.sign-up-btn {
+  background: none;
+  border: none;
+  margin-top: 30px;
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.sign-up-btn > span {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.sign-up-btn > svg {
+  width: 25px;
+  display: block;
+  margin-left: 10px;
+}

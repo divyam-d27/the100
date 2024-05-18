@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.app {
+  background-color: #000;
+  padding: 120px 110px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  height: 103vh;
+  border-radius: 24px;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding: 35px 25px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-container > svg {
+  width: 35px;
+  height: 35px;
+  display: block;
+}
+.logo-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.box-1-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.box-1-img-container > img {
+  height: 230px;
+  display: block;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-content-container {
+  padding: 10px 30px;
+}
+.title-container {
+  border-bottom: 2px solid #000;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+.box-title {
+  font-size: 4.4rem;
+  font-weight: 500;
+  font-family: "Proza Libre";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title-txt-1,
+.title-txt-2 {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  line-height: 1.2;
+}
+.title-txt-1 {
+  display: flex;
+}
+.asterisk img {
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+.subpara-container {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #000;
+  margin-bottom: 35px;
+}
+.subpara {
+  font-size: 1.8rem;
+  letter-spacing: -0.33px;
+  line-height: 1.5;
+}
+.link > a {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.box-1 {
+  background-color: #f6d465;
+}
+
+/* BOX 2 */
+
+.box-2 {
+  background-color: #f0523c;
+}
+.box-2-img {
+  display: block;
+  height: 280px;
+}
+
+.box-2-lower {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.num-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.num-txt {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.box-2-arr > img {
+  height: 50px;
+  width: 50px;
+  rotate: 45deg;
+  display: block;
+}
+.transaction {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* BOX 3 */
+
+.box-3 {
+  background-color: #ffb0e2;
+}
+.box-3-img {
+  display: block;
+  height: 250px;
+}
+.box-3-title {
+  padding-top: 10px;
+}
+.box-3-link > a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.link-txt {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.arr > img {
+  width: 17px;
+  height: 17px;
+  rotate: 45deg;
+  display: block;
+}

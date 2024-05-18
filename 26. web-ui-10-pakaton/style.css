@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-bg-container > img {
+  width: 100%;
+  display: block;
+}
+
+.hero-content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 90px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.07);
+
+  height: 100%;
+  width: 100%;
+
+  display: flow-root;
+  position: relative;
+}
+
+/* for gradient borders */
+.hero-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px 50px 0 0;
+  border: 5px solid transparent;
+  border-bottom: 0;
+  background: linear-gradient(#200503, #2005031a) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.logo {
+  color: #dd4e41;
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.nav-links-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: #676767;
+  font-size: 16px;
+}
+.nav-link-item {
+  font-size: inherit;
+  font-weight: 500;
+  color: inherit;
+  margin: 0 35px;
+}
+.signup-btn {
+  color: #dd4e41;
+  color: #dd4e41;
+  background-color: transparent;
+  border: 1px solid #dd4e41;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hero-middle-content {
+  text-align: center;
+}
+.hero-middle-content > h1 {
+  color: #200503;
+  font-size: 60px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.hero-middle-content > p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #676767;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.explore-now-btn {
+  color: #fff;
+  border: none;
+  background-color: rgb(221, 78, 65);
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 7px 29px 0px rgba(221, 78, 65, 0.5);
+}

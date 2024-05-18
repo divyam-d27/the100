@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.products-section {
+  height: 100vh;
+  padding: 40px 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  padding: 0 40px;
+  color: #1a2024;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.bold-underline {
+  position: relative;
+}
+
+.underline {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #d83333;
+  position: absolute;
+  bottom: 0.5px;
+  right: 6px;
+}
+
+.product-container {
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.product-slider {
+  overflow-x: auto;
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  width: max-content;
+}
+
+.product-card {
+  margin-right: 15px;
+  height: 540px;
+  width: 240px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  border: 1px solid rgb(238, 240, 244);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.product-vid {
+  width: 100%;
+  height: 410px;
+}
+
+.product-vid video {
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-img {
+  background: #fff;
+  border: 1px solid rgb(238, 240, 244);
+  border-radius: 2px;
+  width: 50px;
+  max-width: 100%;
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.product-title {
+  padding: 35px 4px 0px;
+}
+
+.product-title p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+}
+.product-price p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 4px 4px 5px;
+}
+
+.product-price-highlight {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: -0.64px;
+  color: #000;
+  margin-right: 7px;
+}
+.product-price-cut {
+  color: #a8afb6;
+  letter-spacing: -0.48px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: line-through;
+  /* margin-right: 4px; */
+}
+.product-discount-percent {
+  font-size: 14px;
+  font-weight: 600;
+  color: #12b985;
+  padding-left: 5px;
+}
