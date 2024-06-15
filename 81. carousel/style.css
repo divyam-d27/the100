@@ -20,7 +20,7 @@ html {
   transform: translateY(-50%);
 
   /* IN THE END */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .slide {

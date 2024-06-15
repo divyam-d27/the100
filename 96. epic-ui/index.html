@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EPIC UI</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <img class="bg__img" src="./assets/img1.jpg" alt="" />
+      <!-- Slider -->
+      <div class="slider">
+        <!-- Item 1 -->
+        <div class="slide__item slide__active" data-slide-num="1">
+          <img class="slide__img" src="./assets/img1.jpg" alt="" />
+          <div class="item__content first__slide__content">
+            <h2 class="title">
+              The Daughter of Flame<br />
+              <span class="title-highlight">Draupadi</span>
+            </h2>
+            <p class="para">
+              Draupadi, a central figure in the Mahabharata, is known for her
+              beauty, courage, and unique marriage. Born from a sacrificial fire
+              to King Drupada, she is considered one of the Panch-Kanyas,
+              exceptional maidens. Draupadi's hand in marriage was won by Arjuna
+              in a swayamvara competition, but due to a misunderstanding, she
+              ended up married to all five Pandava brothers. A strong and wise
+              woman, she became Empress alongside Yudhishthira and played a
+              significant role in the events leading up to the Kurukshetra war.
+            </p>
+            <button class="explore__btn">
+              <span>Learn more</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path
+                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preview section -->
+      <div class="preview">
+        <button class="arrow__btn prev">
+          <span
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </span>
+        </button>
+        <div class="preview__slider">
+          <div class="preview__item" data-slide-num="0">
+            <span>03</span>
+            <img src="./assets/img0.jpg" alt="" />
+          </div>
+          <div class="preview__item preview__active" data-slide-num="1">
+            <span>01</span>
+            <img src="./assets/img1.jpg" alt="" />
+          </div>
+          <div class="preview__item" data-slide-num="2">
+            <span>02</span>
+            <img src="./assets/img2.jpg" alt="" />
+          </div>
+        </div>
+        <button class="arrow__btn next">
+          <span
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
